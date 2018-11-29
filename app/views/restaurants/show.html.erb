@@ -1,0 +1,8 @@
+<h1><%= @restaurant.name %></h1>
+<p><%= @restaurant.address %></p>
+
+
+<h1><% @restaurant.pizzas do |pizza|  %></h1>
+    <li> <%=  pizza%> </li>
+      <%= link_to pizza.name, pizza %>
+      <% end %>
